@@ -11,6 +11,7 @@ import 'package:ditonton/presentation/pages/popular_movies_page.dart';
 import 'package:ditonton/presentation/pages/search_page.dart';
 import 'package:ditonton/presentation/pages/top_rated_movies_page.dart';
 import 'package:ditonton/presentation/pages/watchlist_movies_page.dart';
+import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -74,6 +75,22 @@ class _HomeMoviePageState extends State<HomeMoviePage> {
               },
               leading: Icon(Icons.info_outline),
               title: Text('About'),
+            ),
+            ListTile(
+              onTap: () async {
+                try {
+                  await FirebaseCrashlytics.instance.recordError(
+                    Exception('Test Crashlytics Fatal Error'),
+                    StackTrace.current,
+                    reason: 'Manual test crash from Drawer',
+                    fatal: true,
+                  );
+                  await FirebaseCrashlytics.instance.sendUnsentReports();
+                  FirebaseCrashlytics.instance.crash();
+                } catch (_) {}
+              },
+              leading: Icon(Icons.bug_report),
+              title: Text('Test Crashlytics'),
             ),
           ],
         ),

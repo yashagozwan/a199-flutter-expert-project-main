@@ -522,6 +522,12 @@ void main() {
       scaffoldState.openDrawer();
       await tester.pump();
       await tester.pump(const Duration(milliseconds: 500));
+      await tester.tap(find.byIcon(Icons.bug_report));
+      await tester.pump();
+
+      scaffoldState.openDrawer();
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 500));
       await tester.tap(find.byIcon(Icons.tv));
       await tester.pump();
       await tester.pump(const Duration(milliseconds: 500));
