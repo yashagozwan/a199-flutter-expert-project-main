@@ -37,5 +37,9 @@ jobs:
         run: flutter analyze
 
       - name: Run unit and widget tests
-        run: flutter test --coverage
+        run: |
+          flutter test --coverage
+          cd packages/core && flutter test --coverage && cd ../..
+          cd packages/movie && flutter test --coverage && cd ../..
+          cd packages/tv && flutter test --coverage && cd ../..
 

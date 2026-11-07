@@ -1,44 +1,16 @@
 import 'dart:ui';
 
-import 'package:ditonton/common/constants.dart';
-import 'package:ditonton/common/ssl_pinning.dart';
-import 'package:ditonton/common/utils.dart';
+import 'package:core/core.dart';
 import 'package:ditonton/firebase_options.dart';
 import 'package:ditonton/injection.dart' as di;
-import 'package:ditonton/presentation/bloc/movie_detail_bloc.dart';
-import 'package:ditonton/presentation/bloc/movie_search_bloc.dart';
-import 'package:ditonton/presentation/bloc/now_playing_movies_bloc.dart';
-import 'package:ditonton/presentation/bloc/now_playing_tvs_bloc.dart';
-import 'package:ditonton/presentation/bloc/popular_movies_bloc.dart';
-import 'package:ditonton/presentation/bloc/popular_tvs_bloc.dart';
-import 'package:ditonton/presentation/bloc/top_rated_movies_bloc.dart';
-import 'package:ditonton/presentation/bloc/top_rated_tvs_bloc.dart';
-import 'package:ditonton/presentation/bloc/tv_detail_bloc.dart';
-import 'package:ditonton/presentation/bloc/tv_search_bloc.dart';
-import 'package:ditonton/presentation/bloc/tv_season_detail_bloc.dart';
-import 'package:ditonton/presentation/bloc/watchlist_movie_bloc.dart';
-import 'package:ditonton/presentation/bloc/watchlist_tv_bloc.dart';
-import 'package:ditonton/presentation/pages/about_page.dart';
-import 'package:ditonton/presentation/pages/home_movie_page.dart';
-import 'package:ditonton/presentation/pages/home_tv_page.dart';
-import 'package:ditonton/presentation/pages/movie_detail_page.dart';
-import 'package:ditonton/presentation/pages/now_playing_tvs_page.dart';
-import 'package:ditonton/presentation/pages/popular_movies_page.dart';
-import 'package:ditonton/presentation/pages/popular_tvs_page.dart';
-import 'package:ditonton/presentation/pages/search_page.dart';
-import 'package:ditonton/presentation/pages/search_tv_page.dart';
-import 'package:ditonton/presentation/pages/top_rated_movies_page.dart';
-import 'package:ditonton/presentation/pages/top_rated_tvs_page.dart';
-import 'package:ditonton/presentation/pages/tv_detail_page.dart';
-import 'package:ditonton/presentation/pages/tv_season_detail_page.dart';
-import 'package:ditonton/presentation/pages/watchlist_movies_page.dart';
-import 'package:ditonton/presentation/pages/watchlist_tvs_page.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:movie/movie.dart';
+import 'package:tv/tv.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

@@ -1,9 +1,9 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:dartz/dartz.dart';
-import 'package:ditonton/common/failure.dart';
-import 'package:ditonton/common/state_enum.dart';
-import 'package:ditonton/domain/entities/movie.dart';
-import 'package:ditonton/presentation/bloc/movie_detail_bloc.dart';
+import 'package:core/common/failure.dart';
+import 'package:core/common/state_enum.dart';
+import 'package:core/domain/entities/movie.dart';
+import 'package:movie/presentation/bloc/movie_detail_bloc.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 

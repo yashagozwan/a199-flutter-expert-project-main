@@ -1,0 +1,30 @@
+name: core
+description: Core module for Ditonton application.
+version: 1.0.0+1
+publish_to: 'none'
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.2
+  dartz: ^0.10.1
+  equatable: ^2.0.5
+  google_fonts: ^6.2.1
+  cached_network_image: ^3.4.1
+  sqflite: ^2.3.3+1
+  path_provider: ^2.1.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  mockito: ^5.0.8
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/certificates/

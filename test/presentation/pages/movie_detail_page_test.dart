@@ -1,9 +1,9 @@
 import 'package:bloc_test/bloc_test.dart';
-import 'package:ditonton/common/state_enum.dart';
-import 'package:ditonton/domain/entities/movie.dart';
-import 'package:ditonton/domain/entities/movie_detail.dart';
-import 'package:ditonton/presentation/bloc/movie_detail_bloc.dart';
-import 'package:ditonton/presentation/pages/movie_detail_page.dart';
+import 'package:core/common/state_enum.dart';
+import 'package:core/domain/entities/movie.dart';
+import 'package:core/domain/entities/movie_detail.dart';
+import 'package:movie/presentation/bloc/movie_detail_bloc.dart';
+import 'package:movie/presentation/pages/movie_detail_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_test/flutter_test.dart';

@@ -23,6 +23,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  core:
+    path: packages/core
+  movie:
+    path: packages/movie
+  tv:
+    path: packages/tv
 
   http: ^1.2.2
   flutter_bloc: ^8.1.6

@@ -1,11 +1,11 @@
 import 'dart:convert';
 
-import 'package:ditonton/data/models/episode_model.dart';
-import 'package:ditonton/data/models/genre_model.dart';
-import 'package:ditonton/data/models/movie_detail_model.dart';
-import 'package:ditonton/data/models/season_detail_model.dart';
-import 'package:ditonton/data/models/season_model.dart';
-import 'package:ditonton/data/models/tv_detail_model.dart';
+import 'package:tv/data/models/episode_model.dart';
+import 'package:core/data/models/genre_model.dart';
+import 'package:movie/data/models/movie_detail_model.dart';
+import 'package:tv/data/models/season_detail_model.dart';
+import 'package:tv/data/models/season_model.dart';
+import 'package:tv/data/models/tv_detail_model.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import '../../dummy_data/dummy_objects.dart';

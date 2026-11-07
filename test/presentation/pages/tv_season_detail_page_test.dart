@@ -1,8 +1,8 @@
 import 'package:bloc_test/bloc_test.dart';
-import 'package:ditonton/domain/entities/episode.dart';
-import 'package:ditonton/domain/entities/season_detail.dart';
-import 'package:ditonton/presentation/bloc/tv_season_detail_bloc.dart';
-import 'package:ditonton/presentation/pages/tv_season_detail_page.dart';
+import 'package:core/domain/entities/episode.dart';
+import 'package:core/domain/entities/season_detail.dart';
+import 'package:tv/presentation/bloc/tv_season_detail_bloc.dart';
+import 'package:tv/presentation/pages/tv_season_detail_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_test/flutter_test.dart';

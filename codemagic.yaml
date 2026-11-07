@@ -24,6 +24,9 @@ workflows:
       - name: Flutter unit and widget tests
         script: |
           flutter test --coverage
+          cd packages/core && flutter test --coverage && cd ../..
+          cd packages/movie && flutter test --coverage && cd ../..
+          cd packages/tv && flutter test --coverage && cd ../..
       - name: Build Debug APK
         script: |
           flutter build apk --debug

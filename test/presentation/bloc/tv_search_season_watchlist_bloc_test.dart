@@ -1,10 +1,10 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:dartz/dartz.dart';
-import 'package:ditonton/common/failure.dart';
-import 'package:ditonton/domain/entities/tv.dart';
-import 'package:ditonton/presentation/bloc/tv_search_bloc.dart';
-import 'package:ditonton/presentation/bloc/tv_season_detail_bloc.dart';
-import 'package:ditonton/presentation/bloc/watchlist_tv_bloc.dart';
+import 'package:core/common/failure.dart';
+import 'package:core/domain/entities/tv.dart';
+import 'package:tv/presentation/bloc/tv_search_bloc.dart';
+import 'package:tv/presentation/bloc/tv_season_detail_bloc.dart';
+import 'package:tv/presentation/bloc/watchlist_tv_bloc.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 

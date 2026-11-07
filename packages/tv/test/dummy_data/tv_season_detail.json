@@ -1,0 +1,24 @@
+{
+  "_id": "5256c89f19c2956ff6046d47",
+  "air_date": "2020-05-05",
+  "episodes": [
+    {
+      "air_date": "2020-05-05",
+      "episode_number": 1,
+      "id": 1,
+      "name": "Episode 1",
+      "overview": "Overview",
+      "production_code": "",
+      "season_number": 1,
+      "still_path": "/path.jpg",
+      "vote_average": 8.0,
+      "vote_count": 10
+    }
+  ],
+  "name": "Season 1",
+  "overview": "Overview",
+  "id": 1,
+  "poster_path": "/path.jpg",
+  "season_number": 1
+}
+
